@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,57 +7,406 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <section id="hero">
-    <div class="hero-header">
-      <div class="headerLogo">
-        <img src="assets/Bosch-Logo.png" alt="Bosch logo" />
+  <!--PASSWORD FORM -->
+  <!-- <div class="passwordContainer">
+    <div class="passwordForm">
+      <h2>Enter Password</h2>
+      <input type="password" class="passwordInput" placeholder="Password" />
+      <button class="passwordSubmit">Submit</button>
+      <p class="errorMessage hidden">Incorrect password, please try again!</p>
+    </div>
+  </div> -->
+  <!-- <div class="pageContent hidden"> -->
+    <section class="heroSection">
+      <div class="heroHeader">
+        <div class="hamburgerMenu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#programmeTab">Programme</a></li>
+            <li><a href="#exploreTab">Explore Vilnius City</a></li>
+            <li><a href="#hotelTab">Hotel</a></li>
+            <li><a href="#contactsTab">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#programme">Programme</a></li>
-          <li><a href="#explore">Explore Vilnius City</a></li>
-          <li><a href="#hotel">Hotel</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
+    </section>
+    
+
+<!-- PROGRAMME SECTION -->
+<section id="programmeTab">
+  <div class="headerDiv"><h2 class="programmeHeader">Programme</h2></div>
+  <div class="bgContainer">
+    
+    <!-- DAY 1 -->
+    <div class="programmeBg day1 active">
+      
+      <div class="tabSwitchButtons">
+      <button class="tabSwitch active" data-day="day1">Tuesday, May 20</button>
+      <button class="tabSwitch"        data-day="day2">Wednesday, May 21</button>
+      <button class="tabSwitch"        data-day="day3">Thursday, May 22</button>
+      </div>
+      <div class="programmeBox">
+        <div class="programmeItem">
+          <div class="time">13:00 - 15:00</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Business lunch</h4>
+            <p><strong>Restaurant Grey</strong>, Pilies St. 2, Vilnius
+              <p>
+                <a class="blackLink" href="https://maps.app.goo.gl/Ud7ZvgtkKaGpsW4E8">Link on Google Maps</a>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div class="programmeItem">
+          <div class="time">19:00 - 23:00</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Dinner</h4>
+            <p><strong>Restaurant Piano Piano</strong>, Vilniaus St. 33, Vilnius
+              <p>
+                <a class="blackLink" href="https://maps.app.goo.gl/gugnhkcDsmDQU4co8">Link on Google Maps</a>
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- DAY 2 -->
+    <div class="programmeBg day2">
+      <div class="tabSwitchButtons">
+      <button class="tabSwitch" data-day="day1">Tuesday, May 20</button>
+      <button class="tabSwitch active" data-day="day2">Wednesday, May 21</button>
+      <button class="tabSwitch" data-day="day3">Thursday, May 22</button>
+      </div>
+      <div class="programmeBox">
+        <!-- Add content for day 2 here -->
+        <div class="programmeItem">
+          <div class="time">09:30 - 12:30</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Bosch Automotive Nordic meeting</h4>
+            <p><strong>Courtyard by Marriott Conference Center.</strong>
+              <p>
+                After the meeting, participants will be transported by bus to Lukiškes Prison
+              </p>
+            <p>
+                <a class="blackLink" href="https://maps.app.goo.gl/PNoHAwim2ih5DwCS7">Link on Google Maps</a>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div class="programmeItem">
+          <div class="time">13:00 - 14:00</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Business lunch</h4>
+            <p><strong>Lukiškes Prison restaurant,</strong>, Vilniaus St. 33, Vilnius
+              <p>
+                <a class="blackLink" href="https://maps.app.goo.gl/d7VPacC9FVcsvkKK6">Link on Google Maps</a>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div class="programmeItem">
+          <div class="time">14:00 - 16:00</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Tours of the historic Lukiškės Prison.</h4>
+            <p>After the tours, participants will be transported by bus to the hotel
+            </p>
+          </div>
+        </div>
+        <div class="programmeItem">
+          <div class="time">19:00</div>
+          <div class="dotLine"><span class="dot"></span></div>
+          <div class="details">
+            <h4>Gala dinner</h4>
+            <p><strong>The Merchants' Club</strong><br>
+            Participants will be transported by bus to the dinner location
+            <p>
+              <a class="blackLink" href="https://maps.app.goo.gl/4zhWMkjigKcxVJbe6">Link on Google Maps</a>
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="programmeBg day3">
+      <div class="tabSwitchButtons">
+      <button class="tabSwitch" data-day="day1">Tuesday, May 20</button>
+      <button class="tabSwitch" data-day="day2">Wednesday, May 21</button>
+      <button class="tabSwitch active" data-day="day3">Thursday, May 22</button>
+      </div>
+      <div class="programmeBox">
+        <div class="thirdDayBox">
+          <div class="details">
+            <h4>Transport from the hotel to the airport</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- EXPLORE SECTION -->
+<section id="exploreTab">
+  <div class="headerDiv"><h2 class="headerClass">Explore Vilnius City</h2></div>
+  <div class="exploreTabs">
+    <button class="tabButton active" data-category="must-visit">Must Visit Places</button>
+    <button class="tabButton" data-category="museum">Museums, Galleries, Street Art</button>
+    <button class="tabButton" data-category="parks">Parks</button>
+  </div>
+
+  <div class="placesContent">
+    <!-- Must Visit Places -->
+    <div class="tabContent must-visit active">
+        <h3 class="headerPlace">Gediminas Castle Tower</h2>
+        <p>This symbol of Vilnius can be seen from many parts of the Old Town and is depicted in various works of art. Climbing Gediminas Hill or going even higher to the observation deck atop the tower offers a panoramic view of Vilnius' rooftops, church spires, and narrow streets. Inside the tower, you'll find a historical exhibition showcasing models of reconstructed Vilnius castles, weaponry, and iconography of old Vilnius.</p>
+        <p>You can either walk up the hill or take the funicular.</p>
+        <p class="paddingParagraph">Tickets are sold at the ticket office near Gediminas Hill.</p>
+        <p class="addressParagraph"><strong>Address:</strong> Arsenalo g. 6, Vilnius, 01143 Vilnius m. sav</p>
+        <div class="exploreButtons">
+          <a class="expButton" href="https://lnm.lt/muziejai/gedimino-pilies-bokstas/" target="_blank">More Information</a>
+          <a class="expButton" href="https://maps.app.goo.gl/3EMc6KQM1WmnGuzR9" target="_blank">Google Maps</a>
+
+        </div>
+        <div class="exploreImages">
+          <img src="assets/gedCastle.png" alt="Gediminas Castle">
+          <img src="assets/gedCastleView.png" alt="View from Gediminas Tower">
+        </div>
+        <div class="whiteLine"></div>
+          <h3 class="headerPlace">The Glass Quarter</h3>
+          <p>The Glass Quarter was established in October 2018 in the area encompassing Stiklių, M. Antokolskio, Ganoo, and Žydų streets. The aim of the Glass Quarter community is to organize cultural routes, reveal the hidden stories of various Old Town locations, create traditions, improve the quarter's infrastructure, and attract investors—as well as locals and visitors—to enjoy their leisure time in a cultured way. Tucked away between the city's main streets, the quarter still houses jewelers, local artists, artisan shops and workshops, cozy restaurants, a chamber orchestra, art galleries, and one of the oldest still-operating hotels—Hotel "Stikliai."</p>
+          <p class="paddingParagraph">Entrance is free of charge.</p>
+          <p class="addressParagraph">Address: Stiklių g., Vilnius, 01131 Vilnius m. sav</p>
+      <div class="exploreButtons">
+        <a class="expButton" href="https://maps.app.goo.gl/qjQNx7rdYp8R8UmMA" target="_blank">Google Maps</a>
+      </div>
+      <div class="exploreImages">
+        <img src="assets/stikliuG.png" alt="Glass Quarter"/>
+        <img src="assets/stikliuGsit.png" alt="Glass Quarter"/>
+      </div>
+      <div class="whiteLine"></div> 
+      <h3 class="headerPlace">The Republic of Užupis</h3>
+      <p>Užupis is a republic of artists, often compared to Paris’s Montmartre or Copenhagen’s Christiania. It is known for its own anthem, constitution (which can be read at the beginning of Paupio Street, written on a wall), president, and even a bishop. The district is home to one of Vilnius’s oldest cemeteries—Bernardine Cemetery—two churches, and is crowned by the iconic bronze Angel of Užupis.
+        <p>
+        This is one of the oldest neighborhoods in Vilnius, mentioned in historical records as early as the 16th century. In the past, it was alive with the turning wings of numerous mills and served as a poor suburb, mainly inhabited by craftsmen. At one point, a red-light district was also located nearby.
+        </p>
+      </p>
+      <p class="paddingParagraph">Entrance is free of charge.</p>
+      <div class="exploreButtons">
+        <a class="expButton" href="https://maps.app.goo.gl/wo8i6Z5nMFeN4Ud28" target="_blank">Google Maps</a>
+      </div>
+      <div class="exploreImages">
+        <img src="assets/stikliuG.png" alt="Glass Quarter"/>
+        <img src="assets/stikliuGsit.png" alt="Glass Quarter"/>
+      </div>
+      <div class="whiteLine"></div>
+      <h3 class="headerPlace">Vilnius Cathedral Basilica of St. Stanislaus and St. Ladislaus and Cathedral Square with the Bell Tower</h3>
+      <p>Vilnius Cathedral Basilica of St. Stanislaus and St. Ladislaus and Cathedral Square with the Bell Tower
+        This sacred site is a symbol of Lithuania’s Christianization. The Cathedral Basilica, built in the very heart of the city on the site of a former pagan temple next to the city’s defensive castle, has always been the most peaceful and attractive location in the history of Vilnius.
+        The remains of Saint Casimir – the patron of Lithuania and youth – rest in Vilnius Cathedral. Blessed Jurgis Matulaitis served as bishop here between 1918 and 1925. On September 4, 1993, Pope John Paul II began his historic apostolic journey through Lithuania with a prayer at the Cathedral.
+      </p>
+      <p class="paddingParagraph">Cathedral entrance is free of charge. Tickets for the bell tower can be purchased on-site or in advance online.</p>
+      <p class="addressParagraph">Address: Šventaragio g. 1, Vilnius, 01143 Vilnius m. sav.</p>
+      <div class="exploreButtons">
+        <a class="expButton" href="https://tickets.paysera.com/lt/event/vilniaus-katedros-varpine-3923" target="_blank">More Information</a>
+        <a class="expButton" href="https://maps.app.goo.gl/FqtvSXTRtwAD6uD26" target="_blank">Google Maps</a>
+      </div>
+      <div class="exploreImages">
+        <img src="assets/katedraOne.png" alt="Cathedral"/>
+        <img src="assets/katedraTwo.png" alt="Cathedral"/>
+      </div>
+      <div class="whiteLine"></div>
+      <h3 class="headerPlace">The Hill of Three Crosses</h3>
+      <p>
+        The white reinforced concrete memorial of the Three Crosses is visible from afar. Once you climb the hill, you’ll be rewarded with stunning panoramic views of Vilnius Old Town. At the foot of the hill lies Bernardine Garden, with the Vilnelė River flowing nearby. The 12-meter-tall monument has become a symbol of national identity, but today it is often illuminated in different colors to commemorate significant events in Lithuania and around the world.
+      </p>
+      <p class="paddingParagraph">Entrance is free of charge.</p>
+      <p class="addressParagraph">Address: Kalnų parkas, 01100 Vilnius</p>
+      <div class="exploreButtons">
+        <a class="expButton" href="https://maps.app.goo.gl/dXxbCb5uqtm8ZfCY7" target="_blank">Google Maps</a>
+      </div>
+      <div class="exploreImages">
+        <img src="assets/crossesOne.png" alt="The Hill of Three Crosses view"/>
+        <img src="assets/crossesTwo.png" alt="The Hill of Three Crosses view"/>
+      </div>
+      <div class="whiteLine"></div>
+      <h3 class="headerPlace">The St. Anne’s and Bernardine Complex</h3>
+      <p>
+        Barcelona has its pride – the Sagrada Familia, and Vilnius has its own – St. Anne’s Church. Almost unchanged over five centuries, the church is one of the most beautiful and probably the most famous examples of late Gothic architecture. A true gem of Gothic construction, surrounded by many legends. This is famous in all the major Napoleon Bonaparte sayings, as well as church chronicles. The French ruler, who passed through Vilnius in 1812, is said to have told his men that he would like to carry the church back to Paris. Next to the church stands its bell tower built in the 19th century, which imitates the Gothic style. It can be confidently stated that St. Anne’s Church has become a mini-square symbol of Vilnius.
+      </p>
+      <p class="paddingParagraph">The entrance to St. Anne’s Church is free of charge. The church is open to visitors from 16:30 to 19:00</p>
+      <p class="addressParagraph">Address: Maironio g. 8, Vilnius, 01124 Vilniaus m. sav.</p>
+      <div class="exploreButtons">
+        <a class="expButton" href="https://maps.app.goo.gl/xdJ19c6kaZnbA7E28" target="_blank">Google Maps</a>
+      </div>
+      <div class="exploreImages">
+        <img src="assets/castleOne.png" alt="The St. Anne’s and Bernardine Complex"/>
+        <img src="assets/castleTwo.png" alt="The St. Anne’s and Bernardine Complex"/>
+      </div>
+      <div class="whiteLine"></div>
+    </div>
+  <!-- Museums, Galleries, Street Art -->
+  <div class="tabContent museum">
+    <h3 class="headerPlace">The Energy and Technology Museum with a rooftop terrace offering a panoramic view of the Old Town</h3>
+    <p>
+      The first public power plant in Vilnius today attracts passersby’s attention more than ever and breaks traditional museum stereotypes. The expanded museum exhibition, dedicated to energy, allows visitors to get acquainted with authentic equipment from the power plant that was recently operational. Walking between steam boilers, turbines, generators, condensers, and complex piping systems offers a sense of the atmosphere of such industrial sites. On the museum’s rooftop terrace, visitors can enjoy an impressive and photogenic view of the city’s Old Town panorama.
+    </p>
+    <p class="paddingParagraph">Tickets to the museum can be purchased at the ticket counters on-site or <a href="#">online</a></p>
+    <p class="addressParagraph"><strong>Address:</strong> Rinktinės g. 2, Vilnius, 09312 Vilniaus m. sav</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://etm.lt/informacija-lankytojams/" target="_blank">More Information</a>
+    <a class="expButton" href="https://maps.app.goo.gl/syNg6fFwyoi1i8aL9" target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/energyMuseumOne.png" alt="Energy Museum interior">
+    <img src="assets/energyMuseumTwo.png" alt="View from Energy Museum terrace">
+  </div>
+
+  <div class="whiteLine"></div>
+
+  <h3 class="headerPlace">Auto Museum</h3>
+  <p>
+    A world-class museum of historic cars welcomes you just beyond the Old Town, in the legendary Vilnius taxi park. Upon arrival, you’ll see unique and rare representatives of automobile evolution. Each vehicle tells its own story and transports you to different moments in world history. It is the largest collection of its kind in Lithuania. The exhibits have come from all over the world, making this an experience you don’t want to miss. The exhibition features more than 100 cars – from the earliest motor vehicles to modern supercars.
+  </p>
+  <p class="paddingParagraph">Tickets to the museum can be purchased at the ticket counters on-site or <a href="#">online</a></p>
+  <p class="addressParagraph"><strong>Address:</strong> Sklėrių k., Vilnius, 07137 Vilniaus m. sav</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://automuziejus.lt/bilietai-internetu/" target="_blank">More Information</a>
+    <a class="expButton" href="https://maps.app.goo.gl/NENVDWcB3yLAAbh76" target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/autoMuseumOne.png" alt="Auto Museum exhibit">
+    <img src="assets/autoMuseumTwo.png" alt="Classic car display">
+  </div>
+  <div class="whiteLine"></div>
+  <h3 class="headerPlace">Literatų Street</h3>
+  <p>
+    Literatų Street always attracts great interest from both Lithuanian and foreign tourists, making it undoubtedly one of the most visited spots in Vilnius Old Town. It is believed that the street received its name in the first half of the 19th century in honor of the writer Adam Mickiewicz, who once lived at the beginning of the street. This is marked by three plaques on a building wall with inscriptions in Lithuanian, Russian, and Polish.
+  </p>
+  <p class="paddingParagraph">Entrance is free of charge.</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://maps.app.goo.gl/8Kc5E5WMM7ZrBML1A"target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/literatuStreet.png" alt="Literatu Street">
+    <img src="assets/literatuStreetWall.png" alt="Literatu Street wall art">
+  </div>
+
+  <div class="whiteLine"></div>
+
+  <h3 class="headerPlace">TV Tower</h3>
+  <p>
+    The Vilnius TV Tower is the tallest structure in Lithuania and proudly ranks among the tallest television towers in the world. It is the 8th tallest in Europe and 26th globally, standing at an impressive height of 326.5 meters.
+  </p>
+  <p>
+    This sky-piercing structure is not only one of Lithuania’s most iconic landmarks but also a powerful symbol of the country’s fight for freedom. As one of the nation’s most distinctive buildings, the TV Tower holds the status of a major attraction. Visitors can enjoy breathtaking views of Vilnius and its surroundings from the 67th-floor bistro-bar “Paukščių takas” or the 68th-floor business and leisure lounge “Debesys.” During the season, an open-air terrace offers a limitless feeling of height, and thrill-seekers can test their courage by walking along the edge of the tower’s bowl—170 meters above the ground. Dare to try it!
+  </p>
+  <p class="paddingParagraph">Tickets to the TV tower can be purchased at the ticket counters on-site or <a href="#">online</a></p>
+  <p class="addressParagraph"><strong>Address:</strong> Sausio 13-osios g. 10, Vilnius, 04347 Vilniaus m. sav.</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://tvbokstas.lt/visi-bilietai/"target="_blank">More Information</a>
+    <a class="expButton" href="https://maps.app.goo.gl/M4rZaGkrwpskbix18"target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/tvTowerOne.png" alt="TV Tower view">
+    <img src="assets/tvTowerTwo.png" alt="TV Tower exterior">
+  </div>
+
+  <div class="whiteLine"></div>
+  </div>
+  <!-- Parks -->
+  <div class="tabContent parks">
+  <h3 class="headerPlace">Bernardine Garden</h3>
+  <p>
+    Bernardine Garden, formerly known to locals as Sereikiškės Park, is located in the very heart of Vilnius—nestled between the Gediminas Castle Tower, the Vilnelė River, and the Bernardine Monastery. A special area of the park features a botanical exhibition that commemorates the 18th-century Vilnius University Botanical Garden, once one of the largest gardens in Eastern Europe. Near the entrance from St. Bruno Street, you’ll find Vilnius’ oldest oak tree, estimated to be around 400 years old. The park also offers cozy cafés and food trucks, making it a perfect spot to relax and enjoy the surroundings.
+  </p>
+  <p class="paddingParagraph">Entrance to the park is free of charge.</p>
+  <p class="addressParagraph"><strong>Address:</strong> Barbora Radvilaitės g. 8A, Vilnius, 01143 Vilniaus m. sav</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://maps.app.goo.gl/hkNhEpXfsDAX2QCy5"target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/bernardinaiOne.png" alt="Bernardine Garden view"/>
+    <img src="assets/bernardinaiTwo.png" alt="Bernardine Garden fountain"/>
+  </div>
+
+  <div class="whiteLine"></div>
+
+  <h3 class="headerPlace">Vingis Park</h3>
+  <p>
+    Vingis Park is a favorite spot for Vilnius residents to walk, cycle, or skate. At the heart of the park is an open-air stage that hosts a variety of events, including concerts and holiday celebrations. In 1988, the stadium near the stage was the site of major Sąjūdis movement rallies, and in 1993, Pope John Paul II held a mass there. The park features cozy cafés and bars that add vibrancy to its atmosphere.
+  </p>
+  <p class="addressParagraph"><strong>Address:</strong> M. K. Čiurlionio g. 100, Vilnius, 03100 Vilniaus m. sav</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://maps.app.goo.gl/zsrzvM8Z16e9F4dZ8"target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/vingisOne.png" alt="Vingis Park aerial"/>
+    <img src="assets/vingisTwo.png" alt="Vingis Park event"/>
+  </div>
+
+  <div class="whiteLine"></div>
+
+  <h3 class="headerPlace">Chiune Sugihara Sakura Park and White Bridge Leisure Area</h3>
+  <p>
+    To commemorate the 100th anniversary of Japanese diplomat Chiune Sugihara, a cherry blossom alley of 200 Japanese sakura trees was planted in his honor on October 2, 2001. Located on the right bank of the Neris River, near the National Gallery of Art, this Japanese sakura park bursts into pink bloom each May, becoming a magnet for city residents and visitors alike.
+  </p>
+  <p>
+    Next to the White Bridge, locals love to spend their summer evenings in a lively atmosphere. The area is buzzing with activity—sports courts, bars, cafés, and water sports make it a vibrant hub of city life.
+  </p>
+  <p class="paddingParagraph">Entrance is free of charge.</p>
+  <div class="exploreButtons">
+    <a class="expButton" href="https://maps.app.goo.gl/1T7JU77X6QrNJada6"target="_blank">Google Maps</a>
+  </div>
+  <div class="exploreImages">
+    <img src="assets/sakuraOne.png" alt="Chiune Sugihara Sakura trees"/>
+    <img src="assets/bridgeTwo.png" alt="White Bridge area view"/>
+  </div>
+
+  <div class="whiteLine"></div>
+  </div>
+</div>
+</section>
+
+
+  <!-- HOTEL SECTION -->
+<section id="hotelTab">
+    <h2 class="eventTitle">Event location</h2>
+    <div class="hotelGrid">
+      <div class="hotelBox">
+        <a href="https://maps.app.goo.gl/N2PaH8XV8dT5ACLd8" class="hotelName" target="_blank">Courtyard by Marriott</a>
+        <p class="hotelAddress">Rinktinės g. 3, Vilnius, 09234 Vilniaus m. sav.</p>
+        <img src="assets/courtYard.png" alt="Courtyard by Marriott">
+      </div>
   
-    <img src="assets/bosch_web_landing.png" alt="Hero banner" class="hero-image" />
-  </section>
-  <section id="programme">
-    <h2>Programme</h2>
-    <div class="tabs">
-      <button class="tablink active" onclick="showDay(event, 'day1')">Tuesday, May 20</button>
-      <button class="tablink" onclick="showDay(event, 'day2')">Wednesday, May 21</button>
-      <button class="tablink" onclick="showDay(event, 'day3')">Thursday, May 22</button>
+      <div class="hotelBox">
+        <a href="https://maps.app.goo.gl/JWzSeKAa3umiiuzN7" class="hotelName" target="_blank">IBIS Hotel Vilnius</a>
+        <p class="hotelAddress">Rinktinės g. 18, Vilnius, 09322 Vilniaus m. sav.</p>
+        <img src="assets/ibisHotel.png" alt="IBIS Hotel Vilnius">
+      </div>
     </div>
-    <div id="day1" class="tabcontent">
-      <img src="assets/day1.png" alt="Day 1 programme" />
-    </div>
-    <div id="day2" class="tabcontent" style="display:none;">
-      <img src="assets/day2.png" alt="Day 2 programme" />
-    </div>
-    <div id="day3" class="tabcontent" style="display:none;">
-      <img src="assets/day3.png" alt="Day 3 programme" />
-    </div>
+
   </section>
 
-  <section id="explore">
-    <h2>Explore Vilnius City</h2>
-    <p>Coming soon – tourist attractions and recommendations.</p>
-  </section>
-
-  <section id="hotel">
-    <h2>Hotel</h2>
-    <p>Details about accommodation options will be added here.</p>
-  </section>
-
-  <section id="contacts">
-    <h2>Contacts</h2>
-    <p>Email: contact@bosch-nordic.com</p>
+  <!-- CONTACTS SECTION -->
+  <section id="contactsBox">
+    <p>For all relevant information, please contact Tomas Bučinskas at <strong>Tomas.Bucinskas@lv.bosch.com</strong>.</p>
   </section>
 
   <script src="script.js"></script>
+<!-- </div> -->
 </body>
 </html>
