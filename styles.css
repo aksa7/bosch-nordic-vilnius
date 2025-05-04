@@ -588,6 +588,9 @@ p a.blackLink {
   .exploreImages {
     flex-direction: column;
   }
+  #contactsBox {
+    background-color: white;
+  }
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .exploreImages {
