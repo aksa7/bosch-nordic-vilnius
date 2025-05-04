@@ -547,21 +547,21 @@ p a.blackLink {
     justify-content: flex-start;
     align-items: center;
   }
-.headerDiv {
-  padding-top: 1rem;
-}
+  .headerDiv {
+    padding-top: 1rem;
+  }
   .placesContent {
     font-size: 18px;
     padding: 1rem;
     max-width: 100%;
     text-align: center;
   }
-.exploreTabs {
-  padding: 1rem;
-}
-.tabButton {
-  border: 1px solid #cfcfcf;
-}
+  .exploreTabs {
+    padding: 1rem;
+  }
+  .tabButton {
+    border: 1px solid #cfcfcf;
+  }
   .tabContent {
     padding: 1rem;
     width: 100%;
@@ -585,10 +585,13 @@ p a.blackLink {
     font-size: 20px;
     margin-bottom: 1rem;
   }
+  .exploreImages {
+    flex-direction: column;
+  }
 }
 @media (min-width: 600px) and (max-width: 800px) {
   .exploreImages {
-    flex-direction: row;
+    flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
@@ -771,6 +774,9 @@ p a.blackLink {
     place-self: center;
     padding: 0.4rem;
     font-size: 14px;
+  }
+  .exploreImages {
+    flex-direction: column;
   }
 
   .tabButton {
