@@ -76,7 +76,7 @@ html, body {
   grid-template-columns: auto;
   width: 100%;
   position: absolute;
-  top: 100px;
+  top: 55px;
   right: 0;
   padding: 0;
 }
@@ -98,7 +98,7 @@ html, body {
 .heroHeader nav a {
   text-decoration: none;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 2rem;
 }
 .heroHeader nav a:hover {
@@ -135,7 +135,7 @@ html, body {
 }
 /* TAB BUTTONS */
 .tabSwitch {
-  color: black;
+  color: #0278d9;
   text-align: center;
   border: none;
   padding: 16px 30px;
@@ -159,6 +159,7 @@ html, body {
 .programmeHeader {
   text-align: center;
   padding-bottom: 1rem;
+  color: #0278d9;
   font-size: 30px;
 }
 /* TABS WRAPPER */
@@ -247,7 +248,7 @@ p a.blackLink {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0rem;
   margin: 0;
   height: auto;
   background:#1472bf;
@@ -277,6 +278,7 @@ p a.blackLink {
   cursor: pointer;
   flex: 1;
   min-width: 150px;
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 .tabButton:hover { background:#005ba1; }
@@ -286,19 +288,18 @@ p a.blackLink {
 }
 .tabContent.active {display: block;}
 .placesContent {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto;
   color: white;
   text-align: left;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 800px;
   box-sizing: border-box;
   overflow-wrap: break-word;
   word-wrap: break-word;
   }
 .tabContent {
-  padding: 2rem;
   display: none;
   margin: 0 auto;
   text-align: left; 
@@ -306,13 +307,12 @@ p a.blackLink {
   box-sizing: border-box;
   }
 .headerPlace {
-  padding-bottom: 20px;
-  font-weight: 200;
+  padding: 2rem 0;
+  font-weight: bold;
   }
 .paddingParagraph {padding-top: 1rem;}
 .addressParagraph {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   font-size: 12px;
   font-style: italic;
   }
@@ -329,6 +329,26 @@ p a.blackLink {
   background-color: #009CDE;
   color: white;
 }
+.exploreTextBox {
+  background-color: white;
+  color: #047dff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.blueExpButton {
+  color: white;
+  background-color: #0072ce;
+  font-size: 14px;
+  padding: 0.5em;
+  border: 2px solid #009CDE;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  text-decoration: none;
+  }
 .expButton {
   background-color: white;
   color: #009CDE;
@@ -345,18 +365,35 @@ p a.blackLink {
 .exploreImages {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  padding-bottom: 2rem;
+  gap: 1em;
+  height: 230px;
+  }
+  .exploreImagesBox {
+  background-color: white;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   .whiteLine {
-  width: 685px;
-  height: 1px;
-  background-color: white;
-  margin: 20px 0;          
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right,
+    #8B0000,  
+    #FF0000,  
+    #800080,  
+    #0000FF,  
+    #00BFFF,  
+    #00FF00,  
+    #006400 
+  );         
   }
   /* HOTEL TAB */
 #hotelTab {
-  background-color: #cfcfcf;
+  background-color: #ffffff;
   padding: 2rem;
   margin: 0;
   height: auto;
@@ -366,7 +403,7 @@ p a.blackLink {
   justify-content: center;
   font-size: 32px;
   font-weight: 700;
-  color: #000;
+  color: #1472bf;
   margin-bottom: 40px;
   }
   .hotelGrid {
@@ -378,14 +415,14 @@ p a.blackLink {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 40px;
   }
   .hotelBox {
-    max-width: 40%;
+    max-width: 50%;
     width: 100%;
     object-fit: cover;
     box-sizing: border-box;
     display: flex;
+    background-color: #1472bf;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -397,7 +434,7 @@ p a.blackLink {
     justify-content: left;
     font-size: 18px;
     font-weight: 400;
-    color: #007bff;
+    color: white;
     line-height: 1.4;
     text-decoration: none;
     padding-top: 1rem;
@@ -406,7 +443,7 @@ p a.blackLink {
   }
   .hotelAddress {
     font-size: 15px;
-    color: #333;
+    color: white;
     margin: 8px 0 16px;
   }
   .hotelBox > img {
@@ -417,23 +454,61 @@ p a.blackLink {
   }
   .hotelBox a:hover {text-decoration: underline;}
   #contactsBox {  
-    background-color: #cfcfcf;
+    background-color: white;
     text-align: center;
     padding: 0.5em;
     font-size: 14px;
 }
+
+/* LOCATION SECTION */
+#locationSection {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.locationContent h2 {
+  font-size: 2rem;
+  color: #0071c2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.locationList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  max-width: 500px;
+}
+
+.locationList li {
+  margin: 10px 0;
+}
+
+.locationList a {
+  color: #0071c2;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.locationList a:hover {
+  text-decoration: underline;
+}
+
 /* MOBILE: 0–400px */
 @media (max-width: 400px) {
   /* --- HEADER / HERO SECTION --- */
   .heroSection {
     height: 100%;
-    background-size: 100% auto;
-    background-image: url("assets/landing_Page_400x400.png");
+    width: 100%;
+    padding: 1rem;
+    background-size: 100% 100%;
+    background-image: url("assets/landingPage_400x400.png");
     background-position: center center;
+    background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 40px;
+    top: 10px;
+    right: 0;
     justify-content: center;
     text-align: center;
   }
@@ -453,10 +528,12 @@ p a.blackLink {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  padding-top: 3rem;
+  border: 1px solid black;
+  width: 100%;
+  height: 50%;
   background-color: white;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 999;
   transform: translateX(100%);
@@ -513,7 +590,6 @@ p a.blackLink {
 .hotelGrid {
   flex-wrap: nowrap;
   flex-direction: row;
-  gap: 0.5rem;
   width: 100%;
   object-fit: cover;
   justify-content: center;
@@ -558,9 +634,7 @@ p a.blackLink {
   }
   .exploreTabs {
     padding: 1rem;
-  }
-  .tabButton {
-    border: 1px solid #cfcfcf;
+    gap: 30px;
   }
   .tabContent {
     padding: 1rem;
@@ -586,18 +660,10 @@ p a.blackLink {
     margin-bottom: 1rem;
   }
   .exploreImages {
-    flex-direction: column;
-  }
-  #contactsBox {
-    background-color: white;
-  }
-}
-@media (min-width: 600px) and (max-width: 800px) {
-  .exploreImages {
-    flex-direction: row !important;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
     justify-content: center;
-    gap: 1rem;
+    height: 100%;
   }
 
   .exploreImages img {
@@ -605,36 +671,73 @@ p a.blackLink {
     height: auto;
     object-fit: cover;
   }
-  .heroSection {
-    height: 100%;
-    background-size: cover;
-    background-image: url("assets/landing_Page_400x400.png");
-    background-position: center center;
+
+  .whiteLine {
+    width: 100%;
   }
-  .heroHeader {
-    padding: 0.5rem;
-    top: 40px;
-    justify-content: center;
-    text-align: center;
+  #contactsBox {
+    background-color: white;
   }
 }
-
-@media (min-width: 401px) and (max-width: 800px) {
-  /* HERO SECTION */
+@media (min-width: 401px) and (max-width: 600px) {
   .heroSection {
-    height: 100%;
+    height: 70vh;
+    padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/landing_Page.png");
+    background-image: url("assets/landingPage_600x600.png");
     background-position: center center;
+    background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 40px;
+    top: 20px;
     justify-content: center;
     text-align: center;
   }
+  .exploreImages {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
 
+  .exploreImages img {
+    max-width: 48%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .heroSection {
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    background-size: 100% 100%;
+    background-image: url("assets/landingPage_800x800.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .heroHeader {
+    padding: 0.5rem;
+    top: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  .exploreImages {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
 
+  .exploreImages img {
+    max-width: 48%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 401px) and (max-width: 800px) {
+  
   /* HAMBURGER MENU STAYS */
   .hamburgerMenu {
     display: block;
@@ -651,7 +754,7 @@ p a.blackLink {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -712,7 +815,6 @@ p a.blackLink {
   .hotelGrid {
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 0.5rem;
     width: 100%;
     object-fit: cover;
     justify-content: center;
@@ -778,15 +880,14 @@ p a.blackLink {
     padding: 0.4rem;
     font-size: 14px;
   }
-  .exploreImages {
-    flex-direction: column;
+  
+  .whiteLine {
+    width: 100%;
   }
-
   .tabButton {
     font-size: 14px;
     padding: 1rem;
     margin-bottom: 0.5rem;
-    border: 1px solid #cfcfcf;
   }
 
   .headerClass {
@@ -802,21 +903,24 @@ p a.blackLink {
     background-image: url("assets/landing_Page.png");
     background-position: center center;
   }
-
   .heroHeader {
     padding: 0rem;
-    top: 110px;
-    left: 20px;
+    top: 60px;
+    left: 25px;
     gap: 0px;
+    font-size: 12px;
     justify-content: flex-end;
     text-align: right;
     display: flex;
   }
   
   .heroHeader nav ul {
-    gap: 2rem;
+    gap: 1rem;
   }
 
+  .whiteLine {
+    width: 100%;
+  }
   .hamburgerMenu {
     display: none;
   }
@@ -829,6 +933,7 @@ p a.blackLink {
     width: auto;
     background-color: transparent;
     transform: none;
+    padding-right: 1rem;
     justify-content: flex-end;
     align-items: center;
   }
@@ -876,10 +981,7 @@ p a.blackLink {
   .hotelGrid {
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    gap: 2rem;
   }
-
   .hotelBox {
     flex: 1;
     padding: 1rem;
@@ -925,9 +1027,9 @@ p a.blackLink {
 
   .exploreImages {
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    gap: 1rem;
+    height: 100%;
   }
 
   .exploreImages img {
@@ -951,6 +1053,7 @@ p a.blackLink {
   .tabButton {
     font-size: 14px;
     padding: 1rem;
+    border-radius: 5px;
     margin-bottom: 0.5rem;
   }
   .headerClass {
