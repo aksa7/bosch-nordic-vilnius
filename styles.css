@@ -259,6 +259,7 @@ p a.blackLink {
 .headerClass{
   color: white;
   padding: 1rem;
+  font-size: 30px;
   text-align: center;
   }
 .headerDiv {
@@ -288,7 +289,7 @@ p a.blackLink {
 }
 .tabContent.active {display: block;}
 .placesContent {
-  padding: 2rem 2rem 0 2rem;
+  padding: 3rem 0;
   margin: 0 auto;
   color: white;
   text-align: left;
@@ -366,7 +367,7 @@ p a.blackLink {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  height: 230px;
+  height: 250px;
   }
   .exploreImagesBox {
   background-color: white;
@@ -432,8 +433,8 @@ p a.blackLink {
   .hotelName {
     display: flex;
     justify-content: left;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
     line-height: 1.4;
     text-decoration: none;
@@ -478,7 +479,13 @@ p a.blackLink {
   margin: 0 auto 30px;
   max-width: 500px;
 }
-
+.ticketsOnline {
+  color: white;
+  font-style:italic;
+}
+.ticketsOnline:hover {
+  color: #5db1ed;
+}
 .locationList li {
   margin: 10px 0;
 }
@@ -531,7 +538,7 @@ p a.blackLink {
   padding-top: 3rem;
   border: 1px solid black;
   width: 100%;
-  height: 50%;
+  height: 35%;
   background-color: white;
   justify-content: flex-start;
   align-items: center;
@@ -542,6 +549,7 @@ p a.blackLink {
 
 .heroHeader nav ul.active {
   display: flex;
+  padding: 1rem;
   transform: translateX(0);
 }
 
@@ -605,7 +613,7 @@ p a.blackLink {
 .hotelBox {
   flex: 1;
   padding: 0.5rem;
-  max-width: 100%;
+  width: 100%;
 }
 .hotelBox img {
   height: 180px;
@@ -613,7 +621,6 @@ p a.blackLink {
   object-fit: cover;
 }
 .hotelName {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -648,26 +655,29 @@ p a.blackLink {
     align-items: stretch;
     width: 100%;
   }
-
   .expButton {
-    width: 100%;
-    padding: 0.6rem;
+    width: 70%;
+    place-self: center;
+    padding: 0.4rem;
     font-size: 14px;
   }
 
+  .tabButton {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
   .headerClass {
-    font-size: 20px;
     margin-bottom: 1rem;
   }
   .exploreImages {
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     height: 100%;
   }
 
   .exploreImages img {
-    max-width: 48%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -694,15 +704,18 @@ p a.blackLink {
     justify-content: center;
     text-align: center;
   }
+  .tabButton {
+    width: 60%;
+  }
   .exploreImages {
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     height: 100%;
   }
 
   .exploreImages img {
-    max-width: 48%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -729,11 +742,16 @@ p a.blackLink {
     justify-content: center;
     height: 100%;
   }
-
+  .tabButton {
+    width: 50%;
+  }
   .exploreImages img {
     max-width: 48%;
     height: auto;
     object-fit: cover;
+  }
+  .expButton {
+    width: 50%;
   }
 }
 @media (min-width: 401px) and (max-width: 800px) {
@@ -891,7 +909,6 @@ p a.blackLink {
   }
 
   .headerClass {
-    font-size: 22px;
     margin-bottom: 1rem;
   }
 }
@@ -998,7 +1015,8 @@ p a.blackLink {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   /* --- EXPLORE SECTION --- */
@@ -1014,7 +1032,7 @@ p a.blackLink {
 
   .placesContent {
     font-size: 17px;
-    padding: 1rem;
+    padding: 1rem ;
     max-width: 700px;
     text-align: left;
   }
@@ -1032,6 +1050,9 @@ p a.blackLink {
     height: 100%;
   }
 
+  .tabButton {
+    width: 50%;
+  }
   .exploreImages img {
     max-width: 48%;
     height: auto;
@@ -1057,7 +1078,6 @@ p a.blackLink {
     margin-bottom: 0.5rem;
   }
   .headerClass {
-    font-size: 22px;
     margin-bottom: 1rem;
   }  
 }
