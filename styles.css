@@ -58,7 +58,7 @@ html, body {
 } */
 /* ── HERO SECTION ──────────────────────────────────────────── */
 .heroSection {
-  background-image: url('assets/landing_Page.png'); 
+  background-image: url('assets/maNordicEvent1920x1080_Vilnius.png'); 
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -190,6 +190,8 @@ html, body {
   font-weight: 500;
   font-size: 15px;
   padding-top: 3px;
+  display: flex;
+  justify-content: center;
 }
 /* BLUE DOT COLUMN */
 .dotLine {
@@ -508,7 +510,7 @@ p a.blackLink {
     width: 100%;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/landingPage_400x400.png");
+    background-image: url("assets/maNordicEvent_400x400.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -691,16 +693,16 @@ p a.blackLink {
 }
 @media (min-width: 401px) and (max-width: 600px) {
   .heroSection {
-    height: 70vh;
+    height: 60vh;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/landingPage_600x600.png");
+    background-image: url("assets/maNordicEvent_400x400.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 20px;
+    top: 25px;
     justify-content: center;
     text-align: center;
   }
@@ -726,13 +728,13 @@ p a.blackLink {
     width: 100%;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/landingPage_800x800.png");
+    background-image: url("assets/maNordicEvent800x800.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 25px;
+    top: 45px;
     justify-content: center;
     text-align: center;
   }
@@ -917,7 +919,7 @@ p a.blackLink {
   .heroSection {
     height: 100vh;
     background-size: 100% 100%;
-    background-image: url("assets/landing_Page.png");
+    background-image: url("assets/maNordicEvent1920x1080_Vilnius.png");
     background-position: center center;
   }
   .heroHeader {
