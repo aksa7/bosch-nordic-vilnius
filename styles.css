@@ -58,7 +58,7 @@ html, body {
 } */
 /* ── HERO SECTION ──────────────────────────────────────────── */
 .heroSection {
-  background-image: url('assets/maNordicEvent1920x1080_Vilnius.png'); 
+  background-image: url('assets/banner1920.png'); 
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -510,13 +510,13 @@ p a.blackLink {
     width: 100%;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/maNordicEvent_400x400.png");
+    background-image: url("assets/Banner_800x800.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 10px;
+    top: 0px;
     right: 0;
     justify-content: center;
     text-align: center;
@@ -696,13 +696,13 @@ p a.blackLink {
     height: 60vh;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/maNordicEvent_400x400.png");
+    background-image: url("assets/Banner_800x800.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 25px;
+    top: 10px;
     justify-content: center;
     text-align: center;
   }
@@ -728,13 +728,13 @@ p a.blackLink {
     width: 100%;
     padding: 1rem;
     background-size: 100% 100%;
-    background-image: url("assets/maNordicEvent800x800.png");
+    background-image: url("assets/Banner_800x800.png");
     background-position: center center;
     background-repeat: no-repeat;
   }
   .heroHeader {
     padding: 0.5rem;
-    top: 45px;
+    top: 30px;
     justify-content: center;
     text-align: center;
   }
@@ -917,14 +917,14 @@ p a.blackLink {
 @media (min-width: 801px) and (max-width: 1024px) {
   /* --- HERO SECTION --- */
   .heroSection {
-    height: 100vh;
+    height: 90vh;
     background-size: 100% 100%;
-    background-image: url("assets/maNordicEvent1920x1080_Vilnius.png");
+    background-image: url("assets/banner1920.png");
     background-position: center center;
   }
   .heroHeader {
     padding: 0rem;
-    top: 60px;
+    top: 50px;
     left: 25px;
     gap: 0px;
     font-size: 12px;
