@@ -665,7 +665,8 @@ p a.blackLink {
   }
 
   .tabButton {
-    width: 100%;
+    width: 75%;
+    font-size: 14px;
     margin-bottom: 0.5rem;
   }
   .headerClass {
