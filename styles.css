@@ -133,6 +133,31 @@ html, body {
   font-family: sans-serif;
   padding: 40px 20px;
 }
+.boldText {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+td {
+  background-color: #fafafa;
+}
+
 /* TAB BUTTONS */
 .tabSwitch {
   color: #0278d9;
@@ -225,7 +250,7 @@ html, body {
 .thirdDayBox {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 0 0 32px 32px;
 }
 p a.blackLink {
   color: rgb(0, 0, 0);
@@ -233,7 +258,11 @@ p a.blackLink {
   font-style: normal;
 }
 .blackLink:hover {text-decoration: underline;}
-.thirdDayBox .details h4 {text-align: center;}
+.thirdDayBox .details h4 {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 16px;
+}
 .details p {
   margin: 0;
   padding-top: 0.5em;
@@ -245,6 +274,34 @@ p a.blackLink {
   font-style: italic;
 }
 .details a:hover {text-decoration: underline;}
+.arrivalText {
+  color:#0071c2;
+  padding-bottom: 3rem;
+  text-align: center;
+
+}
+
+/* DRESS CODE */
+.dressCodeBox {
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+.dressCodeBox li {
+  text-decoration: none;
+  list-style: none;
+  color:#0071c2;
+  padding: 2px;
+}
+.dressCodeHeader {
+  font-size: 30px;
+  color: #0278d9;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* END OF DRESS CODE */
 #exploreTab {
   display: flex;
   flex-direction: column;
